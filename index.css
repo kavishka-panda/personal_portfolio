@@ -1,0 +1,32 @@
+/* Add this to your new index.css file */
+
+/* Import the Poppins font from Google Fonts (as seen in your original code) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@600&display=swap');
+
+/* Add Tailwind CSS directives (if you are using Tailwind, this is usually here) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the keyframe animation for the moving current */
+@keyframes move-current {
+  to {
+    /* This value should be the negative of the sum of the dasharray values (10 + 10 = 20) */
+    stroke-dashoffset: -20;
+  }
+}
+
+/* Apply the animation and glow to our connecting lines */
+.connecting-line {
+  /* Set the stroke color to a bright teal */
+  stroke: #2dd4bf; 
+
+  /* Create a dashed line pattern: 10px line, 10px gap */
+  stroke-dasharray: 10 10;
+  
+  /* Run the "move-current" animation infinitely */
+  animation: move-current 1s linear infinite;
+
+  /* Add a multi-layered glow for a more vibrant effect */
+  filter: drop-shadow(0 0 2px #2dd4bf) drop-shadow(0 0 5px #2dd4bf) drop-shadow(0 0 10px #2dd4bf);
+}
