@@ -22,14 +22,10 @@
     "vanta": "^0.5.24"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.13",
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.9",
     "@types/webpack-env": "^1.18.8",
-    "autoprefixer": "^10.4.21",
     "gh-pages": "^6.3.0",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.13",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
